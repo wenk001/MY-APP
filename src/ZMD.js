@@ -4,7 +4,7 @@ import { Carousel, WingBlank } from 'antd-mobile';
 class Zmd extends React.Component {
   state = {
     data: ['1', '2', '3'],
-    imgHeight: 176,
+    imgHeight: 170,
   }
   componentDidMount() {
     // simulate img loading
@@ -22,8 +22,6 @@ class Zmd extends React.Component {
           infinite
           dots={true}
           autoplay
-          beforeChange={(from, to) => console.log(`slide from ${from} to ${to}`)}
-          afterChange={index => console.log('slide to', index)}
         >
           {this.state.data.map(val => (
             <a

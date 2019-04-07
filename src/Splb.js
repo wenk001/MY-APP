@@ -11,8 +11,8 @@ class Sl extends React.Component{
     render(){
         return(
 <div>
-    <div className="sub-title">某类商品</div>
-    <Grid data={data} activeStyle={false} columnNum={2} itemStyle={{float:"left"}}/>
+    <div className="sub-title">某类商品<div className="sub-title-right"><a href="#">更多</a></div></div>
+    <Grid data={data} activeStyle={false} columnNum={2} itemStyle={{float:"left"}} hasLine={true}/>
         </div>
         );
     }
